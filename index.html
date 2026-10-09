@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0c2c24">
+  <meta name="description" content="Curitiba Secreta: uma caça ao tesouro digital por seis pontos reais da capital paranaense.">
+  <title>Curitiba Secreta — O Código das Araucárias</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="topo-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#missao" aria-label="Curitiba Secreta — início">
+      <span class="brand-seal">041</span>
+      <span class="brand-copy"><strong>CURITIBA SECRETA</strong><small>ARQUIVO URBANO // MISSÃO 06</small></span>
+    </a>
+    <div class="header-status"><span class="status-dot"></span>DOSSIÊ ATIVO</div>
+  </header>
+
+  <main id="missao" class="page-shell">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">29 MAR // ROTA 041 // ACESSO LIBERADO</p>
+        <h1 id="hero-title">O Código das <em>Araucárias</em></h1>
+        <p class="hero-lead">Seis pontos de Curitiba. Seis arquivos. Uma palavra escondida entre o marco zero, pedras centenárias, vidro, concreto e antigas pedreiras.</p>
+        <div class="hero-tags" aria-label="Informações da missão"><span>6 paradas</span><span>600 pts</span><span>progresso salvo</span></div>
+      </div>
+      <div class="city-sigil" aria-label="Símbolo gráfico inspirado em Curitiba">
+        <div class="sigil-ring ring-a"></div><div class="sigil-ring ring-b"></div>
+        <div class="araucaria"><span class="branch b1"></span><span class="branch b2"></span><span class="branch b3"></span><span class="trunk"></span></div>
+        <span class="sigil-label">CWB / PR</span>
+      </div>
+    </section>
+
+    <section class="dashboard" aria-label="Painel da caça ao tesouro">
+      <aside class="route-panel" aria-labelledby="route-title">
+        <div class="panel-heading"><div><p class="micro-label">TRAJETO</p><h2 id="route-title">Linha de investigação</h2></div><span id="route-progress" class="progress-count">0/6</span></div>
+        <ol id="route-list" class="route-list" aria-label="Paradas da rota"></ol>
+        <div class="fragment-panel"><p class="micro-label">FRAGMENTOS RECUPERADOS</p><div id="fragment-list" class="fragment-list" aria-live="polite"><span>??</span><span>??</span><span>??</span><span>?</span><span>?</span><span>?</span></div></div>
+        <button id="reset-button" class="text-button" type="button">↻ reiniciar investigação</button>
+      </aside>
+
+      <section class="case-area" aria-live="polite">
+        <article id="stage-card" class="stage-card">
+          <div class="stage-topline">
+            <div class="stage-index"><span>PARADA</span><strong id="stage-number">01</strong></div>
+            <div class="stage-coordinates"><span id="stage-district">Centro · Marco Zero</span><small id="stage-coordinates">25°25′44″S · 49°16′19″W</small></div>
+          </div>
+          <div class="location-heading"><p id="stage-kicker" class="eyebrow">Onde Curitiba começa</p><h2 id="stage-location">Praça Tiradentes</h2></div>
+          <div class="archive-note"><div class="archive-stamp" aria-hidden="true">ARQ<br>041</div><div><p class="micro-label">RECORTE DO ARQUIVO</p><p id="stage-archive"></p><a id="stage-source" class="source-link" href="#" target="_blank" rel="noopener noreferrer">fonte oficial ↗</a></div></div>
+          <div class="clue-box"><p class="micro-label">ENIGMA ATUAL</p><p id="stage-clue" class="clue-text"></p></div>
+          <form id="answer-form" class="answer-form" autocomplete="off">
+            <label for="answer-input">Sua resposta</label>
+            <div class="answer-row"><input id="answer-input" name="answer" type="text" placeholder="Digite o código da pista..." spellcheck="false" required><button class="primary-button" type="submit">VALIDAR <span>→</span></button></div>
+            <p id="feedback" class="feedback" role="status"></p>
+          </form>
+          <div class="hint-row"><button id="hint-button" class="hint-button" type="button">+ abrir pista auxiliar <span>−30 pts</span></button><p id="hint-text" class="hint-text" hidden></p></div>
+        </article>
+
+        <section id="final-vault" class="final-vault" hidden aria-labelledby="vault-title">
+          <p class="eyebrow">ROTA CONCLUÍDA // COFRE 041</p><h2 id="vault-title">Você chegou ao último arquivo.</h2>
+          <p>Una os seis fragmentos na ordem da rota. Eles formam o símbolo vegetal mais associado ao Paraná.</p>
+          <div id="final-fragments" class="final-fragments" aria-label="Fragmentos do código final"></div>
+          <form id="vault-form" class="vault-form" autocomplete="off"><label for="vault-input">Senha final</label><div class="answer-row"><input id="vault-input" type="text" placeholder="_ _ _ _ _ _ _ _ _" required><button class="primary-button" type="submit">ABRIR COFRE <span>→</span></button></div><p id="vault-feedback" class="feedback" role="status"></p></form>
+          <div id="treasure-reveal" class="treasure-reveal" hidden><div class="treasure-mark">✦</div><p class="micro-label">ARQUIVO DESBLOQUEADO</p><h3>ARAUCÁRIA</h3><p>O tesouro não era um objeto escondido: era a própria rota. Curitiba foi lida em camadas — da fundação no centro às paisagens criadas sobre antigas pedreiras.</p><div class="score-ticket"><span>PONTUAÇÃO FINAL</span><strong id="final-score">000</strong><small>/ 600</small></div></div>
+        </section>
+      </section>
+    </section>
+  </main>
+  <footer class="site-footer"><span>CURITIBA, PARANÁ</span><span>PROJETO WEB // HTML + CSS + JS</span><span>DADOS HISTÓRICOS: TURISMO CURITIBA</span></footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
